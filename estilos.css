@@ -1,0 +1,622 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    color: #ffff;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.home{
+    background: url(img/FondoNav.png) no-repeat center center/cover;
+    width: 100%;
+    height: auto;
+    
+}
+
+.home .container{
+    width: 70%;
+    padding-top: 150px;
+    padding-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffff;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.hamburger{
+    color: #ffff;
+    position: absolute;
+    cursor: pointer;
+    top:40px;
+    right: 30px;
+    z-index: 2;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.nav-main{
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+.nav-main .logo{
+    padding-left: 20px;
+}
+
+.nav-main .logo img{
+    width: 90px;
+}
+
+.nav-main .logo .nombre{
+    width: 120px;
+}
+
+
+.nav-menu{
+    display: flex;
+    padding-right: 40px;
+}
+
+.nav-menu  li{
+    padding: 20px;
+}
+.nav-menu li a{
+    font-size: 15px;
+    padding: 2px;
+}
+
+/* ABOUT US*/
+
+#about-us{
+    background: #ffff, center/cover;
+    padding: 20px 60px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    margin: 10px 0;
+}
+
+.card {
+    display: grid;
+    grid-template: 1fr; 
+    gap:40%;
+}
+
+.card h3{
+ color: #ffff;
+ font-size: 30px;
+ padding-top: 50px;
+ padding-left: 25px; 
+ font-weight: 300;
+}
+
+.card p{
+    color: #ffff;
+    font-size: 30;
+    width: 80%;
+    height: 100px; 
+    padding-left: 25px; 
+    padding-top: 40px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+#card1{
+    background: linear-gradient(rgba(9, 131, 245, 0.8),rgba(9, 131, 245, 0.8)), url(img/Cart1.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 400px;
+}
+
+#card2{
+    background: linear-gradient(rgba(39,101,162,.8),rgba(39,101,162,.8) ) , url(img/Cart2.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 400px;
+}
+
+#card3{
+    background: linear-gradient(rgba(141,30,247, .8), rgba(141,30,247,.8)) , url(img/Cart3.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 400px;
+}
+
+.boton-azul{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 60px;
+}
+
+.btn-azul{
+    cursor: pointer;
+    color: #0484fc;
+    border: 2px solid  #0484fc;
+    display:inline-block;
+    padding: 10px 20px; 
+    background:#ffff;
+    font-size: 15px;
+}
+
+.btn-azul:hover{
+    color: #ffff;
+    border:2px solid #c9d4ec;
+    background: #0484fc;
+}
+
+/*INVESTMENT*/
+
+#investment{
+    background:  #086ccc center/cover;
+    width: 100%;
+    padding: 100px 50px;
+   
+}
+
+
+.cards-color{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+} 
+
+.card-color{
+    height: 100% ;
+    width: 100%;
+} 
+
+.card-color .content {
+    color: #ffff;
+    display: grid;
+    grid-template-columns: 1fr; 
+    padding-top: 40px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    width: 90%;
+} 
+
+.card-color .content h5{
+    font-size: 25px;
+    font-weight: 300;
+    width: 80%; 
+    height: 100px;
+    padding-bottom: 100px;
+    justify-content: flex-start;
+}
+
+.card-color .content p{
+    font-size: 30;
+    width: 90%;
+    height: 100px;
+    padding-top: 60px;
+}
+
+#card-color1{
+    background:  #3484f4 ;
+}
+
+#card-color2{
+    background: #0484fc ;
+}
+
+#card-color3{
+    background: #047cec ;
+}
+
+.boton-color{
+    height: 50px;
+    padding-top: 5px;
+}
+
+.btn-color{
+    cursor: pointer;
+    color: #ffff;
+    border: 1px solid #2f9ef9;
+    display:inline-block;
+    padding: 10px 30px;
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.btn-color:hover{
+    color: #086ccc;
+    background: #ffff;
+}
+
+/* OUR TEAM */
+
+#our-team{   
+    background: #ffff center/cover;
+    width: 100%;
+    height: auto;
+    padding: 30px 40px;
+}
+
+#our-team .contenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+    width: 100%;
+} 
+
+#our-team p{
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+        padding-top: 40px;
+    }
+
+.contactos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+    margin: 20px 0;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.people{
+    height: 100%;
+    padding: 0px;
+    justify-content: center;
+    justify-items: center;
+}
+.people .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 10px;
+    padding-right: 80%;
+}
+
+.foto{
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.descripcion{
+    width: 150px;
+    padding:10px 0;
+    margin-bottom: 10px;
+}
+.nombres{
+    font-size: 25px;
+    font-weight: 300
+}
+.descripcion .texto{
+    height: 100px;
+}
+.datos{
+    color:gray;
+}
+
+.btn-bio{
+    color: #4ca1f1;
+    border: 2px solid  #4ca1f1;
+    cursor: pointer;
+    display:inline-block;
+    padding: 10px 20px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.btn-bio:hover{
+    color: #ffff;
+    border:2px solid #c9d4ec;
+    background: #4ca1f1;
+}
+
+/* FOOTER */
+
+#footer{
+    background: #041c34;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 40px;
+    padding-right:40px ;
+}
+
+#footer .container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 90px;
+    margin: 10px 0;
+    align-items: center; 
+}
+
+#footer .container .logo{
+    display: flex;
+    padding: 10px;
+    padding-right: 90px;
+    width: 190px;
+
+}
+
+#footer .container .logo .empresa{
+    padding: 2px;
+    width: 90px;
+}
+
+#footer .container .logo .nombre{
+    width: 120px;
+   
+}
+
+.menu-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 1px;
+    padding-left: 150px;
+    padding-right: 10px;
+    margin-left: 50px ; 
+}
+
+.menu-footer  li{
+    width: 120px; 
+}
+.menu-footer li a{
+    font-size: 15px;
+}
+
+
+.footer{
+    color: #344a5f;
+    text-align: center;
+    font-size: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+@media(max-width: 1400px){
+
+    /*ABOUT US*/   
+
+    #about-us{
+        padding:10px;
+    } 
+
+    .card p{
+        width: 100%;
+    }
+
+    /*INVESTMENT*/
+
+#investment{
+    padding: 30px 10px;
+
+}
+ 
+    /* OUR TEAM*/
+
+    .contactos{
+        grid-template-columns:1fr 1fr;
+        gap:0px;
+    }
+
+     /* FOOTER */
+           
+     #footer .container .logo{
+     padding: 0px;
+      }
+
+     .menu-footer{
+     padding: 0;
+     } 
+            
+      }
+
+  @media(max-width:1300px){
+
+    /*ABOUT US*/
+    .card{
+        gap:10%;
+    }
+    
+ /* FOOTER */
+
+
+#footer .container{
+    grid-template-columns: 1fr;
+    
+}
+
+#footer .container .logo{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer .container .linkedin{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-footer{
+    grid-template-columns: 1fr 1fr;
+    gap:30px;
+    padding-left: 0px;
+ }
+ .menu-footer li{
+     padding-left: 0px;
+ }
+}
+
+@media (max-width: 800px){
+
+    /* ABOUT US*/
+    .cards{
+        gap:5px
+    }
+        }
+          
+@media (max-width: 700px){
+    .hamburger{
+        display:block;
+    }
+    .nav-menu{
+        position: fixed;
+        padding-top: 30px;
+        padding-left: 0px;
+        top:0;
+        left: -100%;
+        gap: 0;
+        flex-direction: column;
+        background: rgba(1, 28, 55, .94);
+        width: 60%;
+        height: 65%;
+        text-align: center;
+        transition: 0.5s;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .nav-menu.active{
+        top:0;
+        left: 0;
+    }
+
+    .nav-main{
+        padding-top: 50px;
+    }
+    .nav-main .logo{
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+    .home .container{
+        padding: 160px 10px;
+        width: 100%;
+        font-size: 30px;
+    }
+    /* ABOUT US*/
+
+     .cards{
+         grid-template-columns: 1fr;
+         margin: 20px 0;
+    }
+
+    .boton-azul{
+        grid-template-columns: 1fr;
+        height: 40px;
+    }
+    
+    .btn-azul {
+        text-align: center;
+    } 
+
+    /*INVESTMENT*/
+
+    .cards-color{
+        grid-template-columns: 1fr;       
+    }
+
+    .card-color .content{
+        width: 100%;
+        padding-bottom: 15px; 
+        padding-left: 5px; 
+    }
+
+    .boton-color{
+        display: grid;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .btn-color {
+        text-align: center;
+
+    }
+
+    /* OUR TEAM*/
+
+    #our-team{
+        padding: 50px 10px;
+    }
+
+    #our-team p{
+        padding-top: 10px;        
+    }
+
+    .people .container{
+        grid-template-columns: 1fr;
+        gap:0px;
+    }
+        }
+
+  @media (max-width: 500px){
+
+    /*INVESTMENT*/
+
+   #investment{
+    width: 100%;
+    padding: 20px 10px;
+   }
+
+   .cards-color{
+    padding:10px 5px;
+   }
+
+    }
+    
+    @media (max-width: 380px){
+
+        /*HOME*/
+        .nav-main .logo .empresa{
+            width: 70px;
+        }
+        .nav-main .logo .nombre{
+            width: 90px;
+        }
+
+
+        /*INVESTMENT*/
+
+       .card-color .content p{
+            height: 50px;
+            padding-top: 15px;
+        } 
+
+        /*OUR TEAM*/
+        #our-team {
+            padding: 40px,
+        }
+        .contactos{
+            padding: 10px 60px;
+            grid-template-columns:1fr;            
+        }
+
+        /*FOOTER*/
+
+        .menu-footer{
+            grid-template-columns: 1fr;
+        }
+        #footer .container .logo .empresa{
+            width: 70px;
+        }
+        #footer .container .logo .nombre{
+            width: 90px;
+        }
+
+    }
+
+   
+
+
+ 
