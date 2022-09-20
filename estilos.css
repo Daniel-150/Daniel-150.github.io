@@ -203,8 +203,9 @@ ul{
 .card-color .content p{
     font-size: 30;
     width: 90%;
-    height: 100px;
+    height: 90px;
     padding-top: 60px;
+    padding-bottom: 10px;
 }
 
 #card-color1{
@@ -473,16 +474,18 @@ ul{
     .nav-menu{
         position: fixed;
         padding-top: 30px;
-        padding-left: 0px;
-        top:0;
-        left: -100%;
+        padding-bottom: 30px;
+        padding-left: 0;
+        top:-100%;
+        left: 0;
         gap: 0;
         flex-direction: column;
         background: rgba(1, 28, 55, .94);
-        width: 60%;
-        height: 65%;
-        text-align: center;
+        width: 50%;
         transition: 0.5s;
+    }
+    .nav-menu li{
+        padding: 0 30px;
     }
 
     .nav-item{
@@ -558,6 +561,10 @@ ul{
         grid-template-columns: 1fr;
         gap:0px;
     }
+
+    .people #container1 .foto{
+        padding-bottom: 5px;
+    }
         }
 
   @media (max-width: 500px){
@@ -574,8 +581,21 @@ ul{
    }
 
     }
+
+    /*OUR TEAM*/
+    #our-team {
+        padding: 20px 0,
+    }
+/*
+    #our-team p{
+        padding-top: 20px;
+        
+    } */
+    .contactos{
+        padding: 10px 10px;}
     
-    @media (max-width: 380px){
+        
+    @media (max-width: 300px){
 
         /*HOME*/
         .nav-main .logo .empresa{
@@ -584,7 +604,6 @@ ul{
         .nav-main .logo .nombre{
             width: 90px;
         }
-
 
         /*INVESTMENT*/
 
@@ -595,11 +614,11 @@ ul{
 
         /*OUR TEAM*/
         #our-team {
-            padding: 40px,
+            padding: 40px 0,
         }
         .contactos{
-            padding: 10px 60px;
-            grid-template-columns:1fr;            
+            padding: 10px 50px;
+            grid-template-columns:1fr;             
         }
 
         /*FOOTER*/
