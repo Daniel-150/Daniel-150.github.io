@@ -592,7 +592,7 @@ ul{
         padding:0;
     } 
         
-    @media (max-width: 360px){
+    @media (max-width: 300px){
 
         /*HOME*/
         .nav-main .logo .empresa{
