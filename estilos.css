@@ -112,7 +112,7 @@ ul{
     color: #ffff;
     font-size: 30;
     width: 80%;
-    height: 100px; 
+    height: 120px; 
     padding-left: 25px; 
     padding-top: 40px;
     padding-bottom: 10px;
@@ -166,7 +166,6 @@ ul{
     background:  #086ccc center/cover;
     width: 100%;
     padding: 100px 50px;
-   
 }
 
 
@@ -299,7 +298,7 @@ ul{
 }
 .nombres{
     font-size: 25px;
-    font-weight: 300
+    font-weight: 300;
 }
 .descripcion .texto{
     height: 100px;
@@ -328,10 +327,7 @@ ul{
 
 #footer{
     background: #041c34;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    padding-left: 40px;
-    padding-right:40px ;
+    padding: 80px 40px; 
 }
 
 #footer .container{
@@ -347,7 +343,6 @@ ul{
     padding: 10px;
     padding-right: 90px;
     width: 190px;
-
 }
 
 #footer .container .logo .empresa{
@@ -357,7 +352,6 @@ ul{
 
 #footer .container .logo .nombre{
     width: 120px;
-   
 }
 
 .menu-footer{
@@ -383,7 +377,6 @@ ul{
     font-size: 10px;
     padding-top: 30px;
     padding-bottom: 30px;
-
 }
 
 @media(max-width: 1400px){
@@ -402,7 +395,6 @@ ul{
 
 #investment{
     padding: 30px 10px;
-
 }
  
     /* OUR TEAM*/
@@ -433,10 +425,14 @@ ul{
     
  /* FOOTER */
 
+ .footer{
+    padding-left: 0;
+    padding-right: 0;
+ }
 
 #footer .container{
-    grid-template-columns: 1fr;
-    
+    grid-template-columns: 1fr; 
+    padding: 0;
 }
 
 #footer .container .logo{
@@ -451,11 +447,11 @@ ul{
 
 .menu-footer{
     grid-template-columns: 1fr 1fr;
-    gap:30px;
-    padding-left: 0px;
+    gap:20px;
+    padding-left: 0;
  }
  .menu-footer li{
-     padding-left: 0px;
+     padding-left: 0;
  }
 }
 
@@ -559,12 +555,9 @@ ul{
 
     .people .container{
         grid-template-columns: 1fr;
-        gap:0px;
+        padding: 10px 0;
     }
 
-    .people #container1 .foto{
-        padding-bottom: 5px;
-    }
         }
 
   @media (max-width: 500px){
@@ -586,16 +579,20 @@ ul{
     #our-team {
         padding: 20px 0,
     }
-/*
-    #our-team p{
-        padding-top: 20px;
-        
-    } */
+
+    .descripcion{
+        padding: 0;
+    }
     .contactos{
         padding: 10px 10px;}
-    
+ 
+    /*FOOTER*/
+
+    .menu-footer{
+        padding:0;
+    } 
         
-    @media (max-width: 300px){
+    @media (max-width: 360px){
 
         /*HOME*/
         .nav-main .logo .empresa{
@@ -634,8 +631,3 @@ ul{
         }
 
     }
-
-   
-
-
- 
