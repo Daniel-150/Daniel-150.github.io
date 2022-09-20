@@ -15,6 +15,10 @@ ul{
     list-style: none;
 }
 
+li :hover{
+    color: #2f9ef9;
+}
+
 .home{
     background: url(img/FondoNav.png) no-repeat center center/cover;
     width: 100%;
@@ -324,7 +328,7 @@ ul{
 }
 
 /* FOOTER */
-
+/*
 #footer{
     background: #041c34;
     padding: 80px 40px; 
@@ -377,6 +381,62 @@ ul{
     font-size: 10px;
     padding-top: 30px;
     padding-bottom: 30px;
+} */
+
+#footer{
+    background: #041c34;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 40px;
+    padding-right:40px ;
+}
+
+#footer .container{
+    display: flex;
+    padding: 40px 20px;
+    justify-content: space-between;
+    align-content: center;
+}
+
+#footer .container .logo{
+    display: flex;
+   /* padding: 10px; */
+    padding-right: 90px;
+    width: 190px;
+
+}
+
+#footer .container .logo .empresa{
+    padding:0 2px;
+    width: 90px;
+}
+
+#footer .container .logo .nombre{
+    width: 120px;
+}
+
+.menu-footer{
+    display: flex; 
+    gap: 30px;
+}
+
+.menu-footer  li{
+    margin: 10px 0; 
+}
+.menu-footer li a{
+    padding: 2px;
+}
+.linkedin{
+    padding-top: 10px;
+}
+
+.footer{
+    color: #344a5f;
+    text-align: center;
+    font-size: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
 }
 
 @media(max-width: 1400px){
@@ -406,7 +466,7 @@ ul{
 
      /* FOOTER */
            
-     #footer .container .logo{
+     #footer .container {
      padding: 0px;
       }
 
@@ -422,9 +482,10 @@ ul{
     .card{
         gap:10%;
     }
-    
- /* FOOTER */
 
+
+ /* FOOTER */
+/*
  .footer{
     padding-left: 0;
     padding-right: 0;
@@ -452,8 +513,8 @@ ul{
  }
  .menu-footer li{
      padding-left: 0;
- }
-}
+ } */
+} 
 
 @media (max-width: 800px){
 
@@ -461,7 +522,38 @@ ul{
     .cards{
         gap:5px
     }
-        }
+
+    #footer{
+        padding: 20px;
+    }
+    
+    #footer .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding-left: 0;
+    }
+    
+    #footer .container .logo{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #footer .container .linkedin{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .menu-footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:30px;
+        padding-left: 0px;
+     }
+     .menu-footer li{
+        margin-left: 0;
+     }
+    }  
           
 @media (max-width: 700px){
     .hamburger{
