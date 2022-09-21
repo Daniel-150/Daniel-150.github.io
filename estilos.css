@@ -612,6 +612,11 @@ li :hover{
             width: 90px;
         }
 
+        /*ABOUT US*/
+        .card{
+            gap: 10%;
+        }
+
         /*INVESTMENT*/
 
        .card-color .content p{
