@@ -444,7 +444,7 @@ li :hover{
     #footer .container{
         display: grid;
         grid-template-columns: 1fr;
-        gap: 30px;
+        gap: 50px;
         padding-left: 0;
     }
     
