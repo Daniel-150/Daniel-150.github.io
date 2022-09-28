@@ -11,3 +11,8 @@ document.querySelectorAll(".nav-link").forEach(n =>
         hamburger.classList.remove("active");
         navMenu.classList.remove("active");
     }));
+
+    window.addEventListener("scroll", ()=> {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    } );

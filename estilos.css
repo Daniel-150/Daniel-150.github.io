@@ -48,6 +48,16 @@ li :hover{
     display: none;
 }
 
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
 .nav-main{
     font-size: 17px;
     display: flex;
@@ -474,6 +484,18 @@ li :hover{
     .hamburger{
         display:block;
     }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
     .nav-menu{
         position: fixed;
         padding-top: 30px;
@@ -594,7 +616,7 @@ li :hover{
         padding: 0;
     }
     .contactos{
-        padding: 10px 10px;}
+        padding: 10px 0px;}
  
     /*FOOTER*/
 
