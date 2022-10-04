@@ -2,48 +2,68 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-body{
     font-family: Arial, Helvetica, sans-serif;
 }
-a{
-    color: #ffff;
-    text-decoration: none;
-}
 
-ul{
+
+li{
     list-style: none;
 }
-
-li :hover{
-    color: #2f9ef9;
-}
-
-.home{
-    background: url(img/FondoNav.png) no-repeat center center/cover;
-    width: 100%;
-    height: auto;
-    
-}
-
-.home .container{
-    width: 70%;
-    padding-top: 150px;
-    padding-bottom: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    color: #ffff;
-    font-size: 40px;
+a{
+    text-decoration: none;
+    color:#4C5B52;
     font-weight: bold;
 }
 
+/*NAVEGADOR*/
+
+.cabecera{
+    height: 100px;
+    background-color: #fff;
+}
+.nav-main{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background: #fff;
+    position: fixed;
+    z-index: 10;
+}
+
+.logo img{
+    width: 250px;
+    padding-top:10px;
+    padding-left: 20px;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    width: 50%;
+    padding: 10px 0;
+}
+
+.nav-menu li{
+    margin: 10px;
+}
+.nav-menu li a{
+    width: 100%;
+    font-size: 18px;
+}
+
+.servicios{
+    cursor: pointer;
+}
+
 .hamburger{
-    color: #ffff;
     position: absolute;
     cursor: pointer;
-    top:40px;
+    top:20px;
     right: 30px;
-    z-index: 2;
+    z-index: 10;
     font-size: 1.5rem;
     display: none;
 }
@@ -55,434 +75,437 @@ li :hover{
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: white;
+    background-color: rgb(88, 84, 84);
 }
 
-.nav-main{
-    font-size: 17px;
-    display: flex;
-    justify-content: space-between;
+.menu-secundario{
+    position: fixed; 
+    width: 100%;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    padding: 50px 70px;
     align-items: center;
-    height: 60px;
-    padding-top: 50px;
-    padding-left: 20px;
+    background: #fff;
+    border-top: 2px solid #f0f1f0 ;
+    z-index: 20;
+    top: -100%;
 }
 
-.nav-main .logo{
-    padding-left: 20px;
-}
-
-.nav-main .logo img{
-    width: 90px;
-}
-
-.nav-main .logo .nombre{
-    width: 120px;
-}
-
-
-.nav-menu{
+.boton{
+    width: 300px;
     display: flex;
-    padding-right: 40px;
+    cursor: pointer;
+    display: none;
 }
 
-.nav-menu  li{
-    padding: 20px;
-}
-.nav-menu li a{
-    font-size: 15px;
-    padding: 2px;
+.boton i{
+    padding: 0 10px;
+    font-size: 20px;
+    color: #4C5B52;
 }
 
-/* ABOUT US*/
-
-#about-us{
-    background: #ffff, center/cover;
-    padding: 20px 60px;
+.boton a{
+    width: 190px;
+    color:#4C5B52 ;
+    padding-left: 20px;
+    font-size: 50px;
 }
+
+.menu2{
+  top: 120px;
+}
+
+.menu-secundario li{
+   width: 210px;
+   height: 65px;
+   padding: 15px 30px 40px 10px;
+   margin: 30px;
+}
+
+.menu-secundario li a{
+    font-size: 20px;
+}
+
+.menu-secundario li:hover{
+    background: #f0f1f0;
+}
+
+.menu-secundario .nav-item::after{
+    font-family: 'FontAwasome'; 
+    content: "\f178";
+    color:#4C5B52;
+    opacity: 0;
+ }
+ .menu-secundario .nav-item::after:hover{
+    opacity: 1;
+ }
+form{
+    position: relative;
+    right: 120px;
+}
+.input{
+    font-size: 17px;
+    height: 40px;
+    background: #f0f1f0;
+    border-radius: 0.3rem;
+    border: none;
+}
+
+form i{
+    position: absolute;
+    z-index: 20;
+    right: 10px;
+    top: 12px;
+}
+
+/*SHOWCASE*/
+
+.showcase{
+    width: 100%;
+    height: 900px;
+    background: url(img/Plaza.png) no-repeat center center/cover;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.showcase h1{
+    color: #fff;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.showcase p{
+    color: #fff;
+    font-size: 35px;
+    text-align: center;
+}
+
+/*ACTIVIDADES*/
 
 .cards{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 25px;
-    margin: 10px 0;
+   padding: 10px;
 }
 
-.card {
-    display: grid;
-    grid-template: 1fr; 
-    gap:30%;
-}
-
-.card h3{
- color: #ffff;
- font-size: 30px;
- padding-top: 50px;
- padding-left: 25px; 
- font-weight: 300;
- height: 150px;
-}
-
-.card p{
-    color: #ffff;
-    font-size: 30;
-    width: 80%;
-    height: 150px; 
-    padding-left: 25px; 
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-   /* justify-content: flex-end;*/
-}
-
-#card1{
-    background: linear-gradient(rgba(9, 131, 245, 0.8),rgba(9, 131, 245, 0.8)), url(img/Cart1.jpg) no-repeat center center/cover;
-    width: 100%;
-    height: 400px;
-}
-
-#card2{
-    background: linear-gradient(rgba(39,101,162,.8),rgba(39,101,162,.8) ) , url(img/Cart2.jpg) no-repeat center center/cover;
-    width: 100%;
-    height: 400px;
-}
-
-#card3{
-    background: linear-gradient(rgba(141,30,247, .8), rgba(141,30,247,.8)) , url(img/Cart3.jpg) no-repeat center center/cover;
-    width: 100%;
-    height: 400px;
-}
-
-.boton-azul{
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    height: 60px;
-}
-
-.btn-azul{
-    cursor: pointer;
-    color: #0484fc;
-    border: 2px solid  #0484fc;
-    display:inline-block;
-    padding: 10px 20px; 
-    background:#ffff;
-    font-size: 15px;
-}
-
-.btn-azul:hover{
-    color: #ffff;
-    border:2px solid #c9d4ec;
-    background: #0484fc;
-}
-
-/*INVESTMENT*/
-
-#investment{
-    background:  #086ccc center/cover;
-    width: 100%;
-    padding: 100px 50px;
-}
-
-
-.cards-color{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 5px;
-} 
-
-.card-color{
-    height: 100% ;
-    width: 100%;
-} 
-
-.card-color .content {
-    color: #ffff;
-    display: grid;
-    grid-template-columns: 1fr; 
-    padding-top: 40px;
-    padding-bottom: 30px;
-    padding-left: 20px;
-    width: 90%;
-} 
-
-.card-color .content h5{
+.cards h3{
+    color: #fff;
     font-size: 25px;
-    font-weight: 300;
-    width: 80%; 
-    height: 90px;
-    padding-bottom: 70px;
-    justify-content: flex-start;
+    font-weight: bold;
 }
 
-.card-color .content p{
-    font-size: 30;
-    width: 90%;
-    height: 100px;
-    padding-top: 60px;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-}
-
-#card-color1{
-    background:  #3484f4 ;
-}
-
-#card-color2{
-    background: #0484fc ;
-}
-
-#card-color3{
-    background: #047cec ;
-}
-
-.boton-color{
-    height: 50px;
-    padding-top: 5px;
-}
-
-.btn-color{
-    cursor: pointer;
-    color: #ffff;
-    border: 1px solid #2f9ef9;
-    display:inline-block;
-    padding: 10px 30px;
+.cards p{
+    color: #fff;
     font-size: 15px;
-    margin: 10px 0;
 }
 
-.btn-color:hover{
-    color: #086ccc;
-    background: #ffff;
-}
-
-/* OUR TEAM */
-
-#our-team{   
-    background: #ffff center/cover;
-    width: 100%;
-    height: auto;
-    padding: 30px 40px;
-}
-
-#our-team .contenedor{
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 10px;
-    width: 100%;
-} 
-
-#our-team p{
-        text-align: center;
-        font-size: 40px;
-        font-weight: bold;
-        padding-top: 40px;
-    }
-
-.contactos{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 25px;
-    margin: 20px 0;
-    justify-content: center;
-    align-items: center;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-.people{
-    height: 100%;
-    padding: 0px;
-    justify-content: center;
-    justify-items: center;
-}
-.people .container{
+.vacunate{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 10px;
-    padding-right: 80%;
+    margin: 10px 0;
+    gap: 4px;
+}
+
+.c1{ 
+    background: url(img/Vacunate.png) no-repeat center center/cover;
+}
+.c2{
+    width: 100%;
+    background:#4C5B52;
+}
+
+.caja{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.c2 h3{
+    font-size: 30px;
+}
+.caja .contenedor{
+    margin-left: 30px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    margin: 10px;
+} 
+
+.btn-rojo{
+    cursor: pointer;
+    color: #fff;
+    display:inline-block; 
+    padding: 14px 90px; 
+    background:#DA302B;
+    font-size: 13px; 
+}
+
+.imagenes{
+    display: grid; 
+    grid-template-columns: 50% auto auto;
+    grid-template-rows: 25% 25% 25% 25%; 
+    gap: 10px;
+    width: 100%;
+    height: 600px;
+    margin-bottom: 40px;
+} 
+
+.cajas{
+    width: 100%;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  /*  align-items: center; */
+}
+
+.cajas .contenedor{
+    width: 80%;
+    height: 90px;
+    margin-bottom: 20px;
+    margin: 10px;
+}
+
+.c3{
+    width: 100%;
+    height: 100%; 
+    grid-column: 1/2;
+    grid-row: 1/5;
+    background: linear-gradient(rgba(0, 0, 0, 0.01),rgb(0, 0, 0)), url(img/Card-Turismo.svg) no-repeat center/cover;
+}
+.c4{
+    height: auto;
+    grid-row: 1/3;
+    background: linear-gradient(rgba(0,0,0,0.01),rgb(0, 0, 0)), url(img/Card-Campana.svg) no-repeat center/cover ;
+}
+.c5{
+    height: auto;
+    grid-row: 1/2;
+    background:linear-gradient(rgba(0, 0, 0, 0.01),rgb(0, 0, 0)), url(img/card-autogestión.png) no-repeat center/cover ;
+}
+.c6{
+    height: auto;
+    grid-row: 3/5;
+    background:linear-gradient(rgba(0, 0, 0, 0.01),rgb(0, 0, 0)), url(img/Card-Covid19.png) no-repeat center/cover ;
+}
+.c7{
+    height: auto;
+    grid-row: 2/5;
+    background:linear-gradient(rgba(0, 0, 0, 0.01),rgb(0, 0, 0)), url(img/card-mate.png) no-repeat center/cover ;}
+
+/*NOVEDADES*/
+
+.novedades{
+    background: #F4CD5C;
+    padding: 0;
+    padding-top: 50px;
+    position: relative;
+}
+.novedades div{
+    position: relative;
+}
+h2{
+    color: #fff;
+    font-size: 60px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.news-cards{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    width: 100%;
+    padding: 0 100px;
+    gap: 0px;
+}
+
+.news{
+    width: 95%;
+    overflow: hidden;
+    height: 400px;
 }
 
 .foto{
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    height: 70%;
+}
+.foto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.descripcion{
-    width: 150px;
-    padding:10px 0;
-    margin-bottom: 10px;
+.texto{
+    height: 30%;
+    width: 100%;
+    padding: 20px;
+    background: #fff;
 }
-.nombres{
-    font-size: 25px;
-    font-weight: 300;
-}
-.descripcion .texto{
-    height: 100px;
-}
-.datos{
-    color:gray;
-}
-
-.btn-bio{
-    color: #4ca1f1;
-    border: 2px solid  #4ca1f1;
-    cursor: pointer;
-    display:inline-block;
-    padding: 10px 20px;
-    font-size: 15px;
+.texto p{
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(88, 84, 84);
     text-align: center;
 }
 
-.btn-bio:hover{
-    color: #ffff;
-    border:2px solid #c9d4ec;
-    background: #4ca1f1;
-}
-
-/* FOOTER */
-
-#footer{
-    background: #041c34;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    padding-left: 40px;
-    padding-right:40px ;
-}
-
-#footer .container{
+.radio{
+    background: #4C5B52;
     display: flex;
-    padding: 40px 20px;
     justify-content: space-between;
-    align-content: center;
+    align-items: center; 
+    width: 85%;
+    height: 200px;
+    padding: 20px;
+    top: 100px;
+    margin: 0 auto;
+    z-index: 1;
 }
-
-#footer .container .logo{
-    display: flex;
-    padding-right: 90px;
-    width: 190px;
+.radio .logo-radio{
+    width: 200px;
 }
-
-#footer .container .logo .empresa{
-    padding:0 2px;
-    width: 90px;
+.radio .play{
+    width: 50px;
 }
-
-#footer .container .logo .nombre{
+.radio img{
     width: 120px;
 }
 
-.menu-footer{
-    display: flex; 
-    gap: 30px;
+.radio p{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
 }
 
-.menu-footer  li{
-    margin: 10px 0; 
-}
-.menu-footer li a{
-    padding: 2px;
-}
-.linkedin{
-    padding-top: 10px;
-    cursor: pointer;
+.redes{
+    background: #DA302B;
+    height: 370px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: center;
 }
 
+.redes .contenedor{
+    color: #fff;
+    top: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; 
+    align-items: center;
+}
+
+.redes .contenedor p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.iconos{
+    width: 100%;
+    align-content: center;
+}
+
+.redes .contenedor .links{
+    display: flex;
+    width: 520px;
+    margin: 0 auto;
+    
+}
+.redes .contenedor i{
+    color: #fff;
+    font-size: 55px;
+    padding: 0 40px;
+}
+#borde{
+    border-right: 3px solid #F4CD5C;
+}
+
+/*FOOTER*/
 .footer{
-    color: #344a5f;
-    text-align: center;
-    font-size: 10px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-
+    background: #fff;
+    display:flex;
+    gap:150px;
+    padding: 60px;
+}
+.footer img{
+    width: 200px;
+}
+.menu-footer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 80px;
+}
+.menu-footer h4{
+    font-size: 18px ;
+}
+.menu-footer li{
+    padding: 3px 0;
 }
 
-@media(max-width: 1400px){
+.menu-footer li a{
+    font-size: 17px;
+    font-weight: 400;
+}
+.menu-footer .correo{
+    text-decoration: underline;
+}
 
-    /*ABOUT US*/   
+.menu-footer p{
+    font-size: 16px;
+    color: #4C5B52;
+}
 
-    #about-us{
-        padding:10px;
-    } 
+.correo-alpha .correo2 a{
+    text-decoration: underline;
+}
+.correo-alpha .correo2{
+    display: none;
+}
 
-    .card p{
+@media(max-width: 1200px){
+
+    .nav-menu li a{
+        font-size: 15px;
+    }
+
+    form{
+        position: relative;
+        right: 30px;
+    }
+
+    .input{
+        width: 170px;
+    }
+
+    .menu-secundario li{
+        width: 140px;
+        margin: 30px 20px;
+     }
+
+    .news-cards{
+        grid-template-columns: 50% 50%;
         width: 100%;
+        padding: 70px;
+        gap: 30px;
     }
 
-    /*INVESTMENT*/
-
-#investment{
-    padding: 50px 20px;
-}
- 
-    /* OUR TEAM*/
-
-    .contactos{
-        grid-template-columns:1fr 1fr;
-        gap:0px;
-    }
-
-     /* FOOTER */
-           
-     #footer .container {
-     padding: 0px;
-      }
-
-     .menu-footer{
-     padding: 0;
-     } 
-            
-      }
-
-  @media(max-width:1300px){
-
-    
-    /*ABOUT US*/
-    .card{
-        gap:10%;
+    .news {
+       white-space: 100%; 
     } 
 
-} 
-
-@media (max-width: 900px){
-
-    /* ABOUT US*/
-    .cards{
-        gap:5px
-    }
-    
-    #footer .container{
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 50px;
-        padding-left: 0;
-    }
-    
-    #footer .container .logo{
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    #footer .container .linkedin{
-        margin-left: auto;
-        margin-right: auto;
-        
-    }
-    
     .menu-footer{
-        display: grid;
         grid-template-columns: 1fr 1fr;
-        gap:30px;
-        padding-left: 0px;
-     }
-     .menu-footer li{
-        margin-left: 0;
-     }
-    }  
-          
-@media (max-width: 700px){
+    }
+}
+
+/*VERSION Para Tablets*/
+@media(max-width: 900px){
+
+/*NAVEGADOR*/
+
     .hamburger{
-        display:block;
+        display: block;
     }
 
     .hamburger.active .bar:nth-child(2){
@@ -496,175 +519,304 @@ li :hover{
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    .nav-menu{
+    .nav-menu {
         position: fixed;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        padding-left: 0;
-        top:-100%;
-        left: 0;
-        gap: 0;
-        flex-direction: column;
-        background: rgba(1, 28, 55, .94);
-        width: 50%;
-        transition: 0.5s;
-    }
-    .nav-menu li{
-        padding: 0 30px;
+        margin: 0;
+        top: 80px;
+        padding: 0;
+        background: rgb(209, 208, 208); 
+        border: 1.5px solid rgb(209, 208, 208);
+        width: 100%;
+        height: 90%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 2px;
+        right: -100%;
+        transition: 0.4s;
+        z-index: 10px;
     }
 
-    .nav-item{
-        margin: 16px 0;
+    .nav-menu li{
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        background: #fff;
+        margin: 0;
     }
 
     .nav-menu.active{
-        top:0;
-        left: 0;
+        right: 0;
     }
 
-    .nav-main{
-        padding-top: 50px;
+    form {
+        right: 70px;
+        top: 0;
+        margin-bottom: 70px;
     }
-    .nav-main .logo{
-        padding-top: 0px;
-        padding-left: 0px;
-    }
-    .home .container{
-        padding: 160px 10px;
-        width: 100%;
-        font-size: 30px;
-    }
-    /* ABOUT US*/
 
-     .cards{
-         grid-template-columns: 1fr;
-         margin: 20px 0;
+    form i {
+        font-size: 25px;
+        top: 0;
     }
-    .card{
-        gap:30%;
-    } 
 
-    .boton-azul{
+    .input{
+        display: none;
+    }
+    .tramites{
+        display: block;
+    }
+
+    .menu-secundario{
+        display: grid;
         grid-template-columns: 1fr;
-        height: 40px;
+        top: 80px;
+        height: auto;
+        width: 100%;
+        right: -100%; 
+        background: rgb(209, 208, 208); 
+        gap: 0;
+        padding: 1px 0;
+    }
+    .menu-secundario li{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        background: #fff;
+        border: 1.5px solid rgb(242, 242, 242);
+        padding: 20px;
+     }
+     
+    .menu-secundario .nav-link{
+         font-size: 17px;
+     } 
+
+     .menu2{
+        right: 0;
+     }
+
+     .boton{
+        display: block;
+     }
+
+    /*ACTIVIDADES*/
+
+    .cards h3{
+        font-size: 20px;
+    }
+    .cards p{
+        font-size: 15px;
+    }
+
+    .caja .contenedor{
+        margin-left: 10px;
+        width: 90%;
+    }
+
+    .cajas .contenedor{
+        width: 90%;
+    }
+
+    .vacunate{
+        grid-template-columns: 1fr;
     }
     
-    .btn-azul {
-        text-align: center;
+    .imagenes{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-row: 25% 25% 25% 25%;
+        width: 99%;
+        height: 800px;
+    }
+    .c3{
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
+    .c4{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .c5{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    .c6{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .c7{
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+
+    .c2 h3{
+        font-size: 30px;
+    }
+    .caja .contenedor{
+        width: 90%;
     } 
 
-    /*INVESTMENT*/
+    /*NOVEDADES*/
 
-    .cards-color{
-        grid-template-columns: 1fr;       
-    }
-
-    .card-color .content{
-        width: 100%;
-        padding-bottom: 15px; 
-        padding-left: 5px; 
-    }
-
-    .boton-color{
-        display: grid;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    .btn-color {
-        text-align: center;
-
-    }
-
-    /* OUR TEAM*/
-
-    #our-team{
-        padding: 50px 10px;
-    }
-
-    #our-team p{
-        padding-top: 10px;        
-    }
-
-    .people .container{
-        grid-template-columns: 1fr;
-        padding: 10px 0;
-    }
-
-        }
-
-  @media (max-width: 500px){
-
-    /*INVESTMENT*/
-
-   #investment{
-    width: 100%;
-    padding: 20px 10px;
-   }
-
-   .cards-color{
-    padding:10px 5px;
-   }
-
-    }
-
-    /*OUR TEAM*/
-    #our-team {
-        padding: 20px 0,
-    }
-
-    .descripcion{
+    .novedades{
         padding: 0;
     }
-    .contactos{
-        padding: 10px 0px;}
- 
+    .novedades h2{
+        font-size: 30px;
+        margin: 0;
+    }
+
+    .radio{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .logo-radio{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .radio p{
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    .play{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .volumen{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    .redes .contenedor .links{
+        width: 300px; 
+    }
+    
+    .redes .contenedor i{
+        padding: 0 20px;
+    }
+    
     /*FOOTER*/
 
-    .menu-footer{
-        padding:0;
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3px;
     } 
-        
-    @media (max-width: 320px){
-
-        /*HOME*/
-        .nav-main .logo .empresa{
-            width: 70px;
-        }
-        .nav-main .logo .nombre{
-            width: 90px;
-        }
-
-        /*ABOUT US*/
-        .card{
-            gap: 10%;
-        }
-
-        /*INVESTMENT*/
-
-       .card-color .content p{
-            height: 50px;
-            padding-top: 15px;
-        } 
-
-        /*OUR TEAM*/
-        #our-team {
-            padding: 40px 0,
-        }
-        .contactos{
-            padding: 10px 50px;
-            grid-template-columns:1fr;             
-        }
-
-        /*FOOTER*/
-
-        .menu-footer{
-            grid-template-columns: 1fr;
-        }
-        #footer .container .logo .empresa{
-            width: 70px;
-        }
-        #footer .container .logo .nombre{
-            width: 90px;
-        }
-
+    .logo-footer{
+        margin: 10px auto;
     }
+    .menu-footer{
+        gap: 10px;
+        padding: 5px;
+    }
+
+    .correo{
+        display: none;
+    }
+    .correo-alpha i{
+        display: block;
+    }
+    .correo-alpha .correo2{
+        display: block;
+        display: flex;
+    }
+}
+
+/*VERSION MOVIL*/
+
+@media(max-width: 500px){
+
+    /*NAVEGADOR*/
+
+    .cabecera{
+        display: none;
+    }
+    .nav-main{
+        height: 80px;
+    }
+    .logo img{
+        width: 200px;
+    }
+
+    form {
+        margin-bottom: 37px;
+    }
+
+    /*SHOWCASE*/
+
+    .showcase{
+        background: url(img/plaza2.png) no-repeat center center/cover;
+        height: 700px;
+    }
+    .showcase h1{
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .showcase p{
+        text-align: center;
+    }
+
+    /*ACTIVIDADES*/
+
+    .imagenes{
+        width: 98%;
+    }
+
+    .cards h3{
+        font-size: 16px;
+    }
+
+    .c2 h3{
+        font-size: 30px;
+    }
+
+    .c1{
+        height: 190px;
+    }
+
+    .cards{
+        padding: 0;
+    }
+
+    /*NOVEDADES*/
+
+    .novedades h2{
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    .news-cards{
+        grid-template-columns: 100%;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+
+    .news{
+        width: 100%;
+    }
+    .radio{
+        height: auto;
+    }
+    .radio p{
+        font-size: 25px;
+        padding: 5px 40px;
+    }
+
+    .redes .contenedor i{
+        font-size: 40px;
+        padding: 0 10px;
+    }
+
+    .redes .contenedor .links{
+        width: 220px;
+    }
+
+}
+
+@media(max-width: 325px){
+    .menu-footer{
+        grid-template-columns: 1fr;
+    }
+
+}
