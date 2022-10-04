@@ -207,7 +207,7 @@ form i{
     grid-template-columns: 1fr 1fr;
     margin: 10px 0;
     gap: 4px;
-    width: 100%;
+  /*  width: 100%; */
 }
 
 .c1{ 
@@ -632,7 +632,7 @@ form i {
     }
 
     .vacunate{
-        grid-template-columns: 100%;
+        grid-template-columns: auto;
     }
     
     .imagenes{
