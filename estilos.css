@@ -51,7 +51,7 @@ a{
 }
 .nav-menu li a{
     width: 100%;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .servicios{
@@ -187,7 +187,8 @@ form i{
 /*ACTIVIDADES*/
 
 .cards{
-   padding: 10px;
+   display: grid;
+   grid-template-columns: 100%;
 }
 
 .cards h3{
@@ -206,10 +207,12 @@ form i{
     grid-template-columns: 1fr 1fr;
     margin: 10px 0;
     gap: 4px;
+    width: 100%;
 }
 
 .c1{ 
     background: url(img/Vacunate.png) no-repeat center center/cover;
+    width: 100%;
 }
 .c2{
     width: 100%;
@@ -245,16 +248,17 @@ form i{
 
 .imagenes{
     display: grid; 
-    grid-template-columns: 50% auto auto;
+    grid-template-columns: 50% 25% 25%;
     grid-template-rows: 25% 25% 25% 25%; 
     gap: 10px;
-    width: 100%;
+    width: cover; 
     height: 600px;
     margin-bottom: 40px;
+    padding-right: 1px;
 } 
 
 .cajas{
-    width: 100%;
+  /*  width: 100%; */
     height: 280px;
     display: flex;
     flex-direction: column;
@@ -270,7 +274,7 @@ form i{
 }
 
 .c3{
-    width: 100%;
+  /*  width: 100%; */
     height: 100%; 
     grid-column: 1/2;
     grid-row: 1/5;
@@ -504,6 +508,32 @@ h2{
 
 /*NAVEGADOR*/
 
+.cabecera{
+    display: none;
+}
+.nav-main{
+    height: 80px;
+}
+.logo img{
+    width: 200px;
+}
+
+form {
+    right: 70px;
+    top: 0;
+    margin-bottom: 37px;
+}
+
+form i {
+    font-size: 25px;
+    top: 0;
+}
+
+.input{
+    display: none;
+}
+
+
     .hamburger{
         display: block;
     }
@@ -548,20 +578,6 @@ h2{
         right: 0;
     }
 
-    form {
-        right: 70px;
-        top: 0;
-        margin-bottom: 70px;
-    }
-
-    form i {
-        font-size: 25px;
-        top: 0;
-    }
-
-    .input{
-        display: none;
-    }
     .tramites{
         display: block;
     }
@@ -617,15 +633,15 @@ h2{
     }
 
     .vacunate{
-        grid-template-columns: 1fr;
+        grid-template-columns: 100%;
     }
     
     .imagenes{
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: auto auto /*50% 50% */;
         grid-row: 25% 25% 25% 25%;
-        width: 99%;
         height: 800px;
+     /*   width: 98%; */
     }
     .c3{
         grid-column: 1/3;
@@ -760,25 +776,21 @@ h2{
 
     /*ACTIVIDADES*/
 
-    .imagenes{
-        width: 98%;
-    }
-
     .cards h3{
         font-size: 16px;
     }
 
     .c2 h3{
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .c1{
         height: 190px;
     }
-
-    .cards{
-        padding: 0;
-    }
+/*
+    .imagenes{
+        width: 97%;
+    } */
 
     /*NOVEDADES*/
 
