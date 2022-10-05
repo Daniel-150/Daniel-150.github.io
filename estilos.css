@@ -580,6 +580,10 @@ form i {
         margin: 0;
     }
 
+    .nav-main.acttive{
+        position: absolute;
+    }
+
     .nav-menu.active{
         right: 0;
     }
