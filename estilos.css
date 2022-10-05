@@ -21,20 +21,23 @@ a{
     height: 100px;
     background-color: #fff;
 }
+
 .nav-main{
     width: 100%;
-    height: 120px;
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
+    height: 100px;
     background: #fff;
-    position: fixed;
-    z-index: 10;
+    position: fixed; 
+    z-index: 10; 
 }
+
+.barra-superior{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
 
 .logo img{
     width: 250px;
-    padding-top:10px;
     padding-left: 20px;
 }
 
@@ -56,7 +59,7 @@ a{
 
 .servicios{
     cursor: pointer;
-}
+} 
 
 .hamburger{
     position: absolute;
@@ -79,9 +82,9 @@ a{
 }
 
 .menu-secundario{
-    position: fixed; 
+    position: fixed;  
     width: 100%;
-    height: 300px;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(5,1fr);
     padding: 50px 70px;
@@ -89,7 +92,8 @@ a{
     background: #fff;
     border-top: 2px solid #f0f1f0 ;
     z-index: 20;
-    top: -100%;
+    top: -100%; 
+    
 }
 
 .boton{
@@ -112,8 +116,8 @@ a{
     font-size: 50px;
 }
 
-.menu2{
-  top: 120px;
+.menu-secundario.menu2{
+  top: 100px;
 }
 
 .menu-secundario li{
@@ -121,6 +125,7 @@ a{
    height: 65px;
    padding: 15px 30px 40px 10px;
    margin: 30px;
+   align-items: center;
 }
 
 .menu-secundario li a{
@@ -130,16 +135,17 @@ a{
 .menu-secundario li:hover{
     background: #f0f1f0;
 }
-
+/*
 .menu-secundario .nav-item::after{
-    font-family: 'FontAwasome'; 
-    content: "\f178";
-    color:#4C5B52;
+    font-family: 'FontAwasome';
+    content:"\f178";
     opacity: 0;
  }
- .menu-secundario .nav-item::after:hover{
+ 
+ .menu-secundario .nav-item:hover::after{
     opacity: 1;
- }
+ } 
+ */
 form{
     position: relative;
     right: 120px;
@@ -532,7 +538,6 @@ form i {
     display: none;
 }
 
-
     .hamburger{
         display: block;
     }
@@ -551,18 +556,18 @@ form i {
     .nav-menu {
         position: fixed;
         margin: 0;
-        top: 80px;
+        top: 75px;
         padding: 0;
         background: rgb(209, 208, 208); 
         border: 1.5px solid rgb(209, 208, 208);
         width: 100%;
-        height: 90%;
+        height: 100%; 
         display: grid;
         grid-template-columns: 50% 50%;
         gap: 2px;
         right: -100%;
         transition: 0.4s;
-        z-index: 10px;
+        z-index: 20px;
     }
 
     .nav-menu li{
@@ -584,8 +589,8 @@ form i {
     .menu-secundario{
         display: grid;
         grid-template-columns: 1fr;
-        top: 80px;
-        height: auto;
+        top: 75px;
+        height: 100%;
         width: 100%;
         right: -100%; 
         background: rgb(209, 208, 208); 
@@ -594,11 +599,12 @@ form i {
     }
     .menu-secundario li{
         width: 100%;
-        height: 100%;
+        height: 80px;
         margin: 0;
         background: #fff;
         border: 1.5px solid rgb(242, 242, 242);
-        padding: 20px;
+        padding: 20px 10px;
+        align-items: center;
      }
      
     .menu-secundario .nav-link{
@@ -606,7 +612,15 @@ form i {
      } 
 
      .menu2{
+        position: absolute;
         right: 0;
+     }
+     .menu-secundario.menu2{
+        top: auto;
+     }
+
+     .nav-main.menu2{
+        height: 100%;
      }
 
      .boton{
