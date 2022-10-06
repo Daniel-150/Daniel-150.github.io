@@ -17,11 +17,11 @@ document.querySelectorAll(".nav-link").forEach(n =>
       menuSecundario.classList.remove("menu2") 
       mainMenu.classList.remove("menu2");
   }));
-
+/*
   window.addEventListener("scroll", ()=> {
       hamburger.classList.remove("active");
       navMenu.classList.remove("active");
-  } );
+  } ); */
 
 servicios.addEventListener("click", ()=> {
  menuSecundario.classList.toggle("menu2");
