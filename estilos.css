@@ -4,10 +4,10 @@
     padding: 0;
     font-family:'Open Sans', sans-serif;
 }
-
+/*
 body{
     max-width: 1530px;
-}
+}*/
 
 li{
     list-style: none;
@@ -27,7 +27,7 @@ a{
 }
 
 .nav-main{
-    max-width: 1530px;
+  /*  max-width: 1530px;*/
     width: 100%;
     height: 120px;
     background: #fff;
@@ -137,16 +137,20 @@ background:#f0f1f0;
 }
 
 .menu-secundario li{
-   width: 210px;
-   height: 65px;
-   padding: 15px 30px 40px 10px;
-   margin: 30px;
-   align-items: center;
+   width: 220px;
+   height: 80px;
+   margin: 30px 0;
+   padding-top: 20px;
+   padding-bottom: 50px;
+   padding-left: 20px;
+   padding-right: 40px;
 }
 
 .menu-secundario li a{
     font-size: 20px;
 }
+
+
 
 .menu-secundario li:hover{
     background: #f0f1f0;
@@ -192,7 +196,7 @@ form i{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 .showcase h1{
     color: #fff;
@@ -212,7 +216,9 @@ form i{
 
 .cards{
    display: grid;
-   grid-template-columns: 1fr;
+   grid-template-columns: 100%;
+   gap: 10px;
+   margin: 10px 0;
 }
 
 .cards h3{
@@ -229,8 +235,8 @@ form i{
 
 .vacunate{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 10px 0;
+    grid-template-columns: 50% 50%;
+    /*margin: 10px 0;*/
     width: 100%; 
 }
 
@@ -277,13 +283,14 @@ form i{
 }
 
 .imagenes{
+    /*max-width: 1660px;*/
     display: grid; 
-    grid-template-columns: 50% 25% 25%;
+    grid-template-columns: 50% auto auto /*25% 25%*/;
     grid-template-rows: 25% 25% 25% 25%; 
-    gap: 1%;
-    width: 98%; 
+    gap: 10px;
+    width: auto /*100%*/; 
     height: 600px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 } 
 
 .cajas{
@@ -310,13 +317,13 @@ form i{
     background: linear-gradient(rgba(0, 0, 0, 0.01),rgb(0, 0, 0)), url(img/Card-Turismo.svg) no-repeat center/cover;
 }
 .c4{
-    margin-bottom: 8px ;
+   /* margin-bottom: 8px ;*/
     height: auto;
     grid-row: 1/3;
     background: linear-gradient(rgba(0,0,0,0.01),rgb(0, 0, 0)), url(img/Card-Campana.svg) no-repeat center/cover ;
 }
 .c5{
-    margin-bottom: 8px;
+   /* margin-bottom: 8px;*/
     height: auto;
     grid-row: 1/2;
     background:linear-gradient(rgba(0, 0, 0, 0.01),rgb(0, 0, 0)), url(img/card-autogestión.png) no-repeat center/cover ;
@@ -349,19 +356,25 @@ h2{
     padding-bottom: 60px;
     text-align: center;
 }
-
+.novedades .contenedor{
+    max-width: 1660px;
+    width: 80%;
+    margin: 0 auto;
+}
 .news-cards{
+    max-width: 1660px;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     width: 100%;
-    padding: 0 100px;
+   /* padding: 0 100px;*/
     gap: 0px;
+    margin: 0 auto;
 }
 
 .news{
     width: 95%;
     overflow: hidden;
-    height: 400px;
+    height: 450px;
 }
 
 .foto{
@@ -387,13 +400,13 @@ h2{
 }
 
 .radio{
+    max-width: 1660px;
     background: #4C5B52;
     display: flex;
     justify-content: space-between;
     align-items: center; 
-    width: 85%;
     height: 200px;
-    padding: 20px;
+    padding: 20px 100px;
     top: 100px;
     margin: 0 auto;
     z-index: 1;
@@ -523,8 +536,17 @@ h2{
         margin: 30px 20px;
      }
 
+     .novedades .contenedor{
+        width: 100%;
+     }
+
      .news-cards{
         padding: 0 30px;
+        margin-bottom: 50px ;
+     }
+
+     .radio{
+         width: 95%;
      }
 
     .menu-footer{
@@ -687,6 +709,11 @@ form i {
 
     /*ACTIVIDADES*/
 
+    .cards{
+        gap: 5px;
+        margin: 5px 0;
+    }
+
     .cards h3{
         font-size: 20px;
     }
@@ -709,7 +736,8 @@ form i {
         grid-row: 25% 25% 25% 25%;
         height: 800px;
         width: 100%; 
-        gap: 10px;
+        gap: 5px;
+        margin-bottom: 15px;
     }
     .c3{
         grid-column: 1/3;
@@ -750,11 +778,15 @@ form i {
         font-size: 30px;
         margin: 0;
     }
+
+    .novedades .contenedor{
+        width: 95%;
+    }
     
     .news-cards{
         grid-template-columns: 50% 50%;
         width: 100%;
-        padding: 70px;
+       /* padding: 70px;*/
         gap: 30px;
     }
 
@@ -821,8 +853,16 @@ form i {
     .correo{
         display: none;
     }
+
+    .correo-alpha{
+        display: flex;
+    }
+
     .correo-alpha i{
         display: block;
+        margin-top: 5px;
+        margin-right: 6px;
+        color: #4C5B52;
     }
     .correo-alpha .correo2{
         display: block;
@@ -864,7 +904,21 @@ form i {
 
     .c2 h3{
         font-size: 20px;
-        width: 60%;
+        width: 70%;
+        margin-top: 10px;
+    }
+
+    .caja .contenedor{
+        width: 90%;
+        margin: 0 auto;
+        margin-left: 30px;
+    }
+    
+    .boton2{
+        margin: 20px 0;
+    }
+    .btn-rojo{
+        padding: 15px 100px;
     }
 
     .c1{
@@ -881,6 +935,11 @@ form i {
         padding-top: 30px;
         padding-bottom: 20px;
     }
+
+    .novedades.contenedor{
+        max-width: 330px
+    }
+
     .news-cards{
         grid-template-columns: 100%;
         padding: 0 10px;
@@ -888,26 +947,35 @@ form i {
     }
 
     .news{
+        /*max-width: 330px;*/
         width: 100%;
+        height: 350px;
+        margin: 0 auto;
     }
 
      .news-cards{
-        height: 1450px;
+        height: 1040px;
+        gap: 10px;
     }
 
 .radio{
-        top: 270px;
+        top: 400px;
       /*  height: 100px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;*/
     }
+/*
+    .redes{
+        height: 900px;
+    }*/
     .redes .contenedor{
-        margin-top: 120px;
+        margin-top: 260px;
     }
     
     .radio{
         height: auto;
+        padding: 20px;
     }
     .radio p{
         font-size: 25px;
@@ -915,7 +983,7 @@ form i {
     }
 
     .redes{
-        height: 350px;
+        height: 400px;
     }
     .redes .contenedor i{
         font-size: 40px;
