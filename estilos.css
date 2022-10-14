@@ -371,7 +371,7 @@ form i{
 }
 .novedades .contenedor{
     max-width: 1660px;
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
 }
 .news-cards{
@@ -530,7 +530,14 @@ form i{
     display: none;
 }
 
-
+@media(max-width: 1370px){
+    .cajas h3{
+        font-size: 25px;
+    }
+    .cajas .contenedor{
+        margin: 0;
+    }
+}
 
 @media(max-width: 1200px){
 
