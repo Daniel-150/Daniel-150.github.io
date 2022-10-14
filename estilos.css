@@ -371,7 +371,7 @@ form i{
 }
 .novedades .contenedor{
     max-width: 1660px;
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
 }
 .news-cards{
@@ -380,12 +380,12 @@ form i{
     grid-template-columns: 25% 25% 25% 25%;
     width: 100%;
    /* padding: 0 100px;*/
-    gap: 0px;
+    gap: 3px;
     margin: 0 auto;
 }
 
 .news{
-    width: 95%;
+    width: 97%;
     overflow: hidden;
     height: 450px;
 }
@@ -536,6 +536,10 @@ form i{
     }
     .cajas .contenedor{
         margin: 0;
+    }
+
+    .novedades .contenedor{
+        width: 90%;
     }
 }
 
