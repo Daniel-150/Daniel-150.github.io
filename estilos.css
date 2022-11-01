@@ -218,7 +218,7 @@ form i{
 .showcase h1{
     color: #fff;
     font-size: 60px;
-    font-weight: 800;
+    font-weight: bold;
     text-align: center;
     margin-top: 400px;
 }
@@ -367,27 +367,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004c4c4c', e
 .cajas .contenedor p{
     margin-bottom: 30px;
 }
-
-/*
-.cajas{
-    width: 100%; 
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    text-align: center;
-}*/
-/*
-.cajas .contenedor{
-    width: 95%;
-    height: 100px;
-    margin-bottom: 30px;
-    margin: 5px;
-}
-
-.cajas .contenedor h3:hover{
-  color: #4C5B52;
-  font-size: 30px;
-}*/
 
 .c3{
   /*  width: 100%; */
@@ -955,17 +934,6 @@ form i {
     .c5 .imagen5movil{
         display: block;
     }
-/*
-    .c2 h3{
-        font-size: 30px;
-    }
-    .caja .contenedor{
-        width: 60%;
-        margin-left: 0;
-        padding: 5px;
-    } */
-
-  
 
     /*NOVEDADES*/
 
@@ -1106,11 +1074,6 @@ form i {
     .cajas .contenedor h3{
         font-size: 18px;
     }
-
-/*
-    .cajas h3{
-        font-size: 16px;
-    }*/
 
     .vacunate{
         height: 430px;
